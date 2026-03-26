@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="padaria.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="Beige">
+            <Label Text="PADARIA ARTESANAL"
+                   HorizontalOptions="Center"
+                   TextColor="Brown"
+                   Margin="40">
+            </Label>
+            
+            <Label Text="BEM VINDO"
+                   TextColor="Brown"
+                   HorizontalOptions="Center"
+                   Margin="10" >
+                
+            </Label>
+
+            <Label Text="faça login para pedir seu &#10;        pão quentinho"
+                   TextColor="Brown"
+                   HorizontalOptions="Center"
+                   >
+                   
+            </Label>
+            <Border 
+                    Padding="20"
+                    MaximumWidthRequest="300"
+                    BackgroundColor="white">
+                
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15">
+                            
+                    </RoundRectangle>
+                </Border.StrokeShape>
+                
+            <VerticalStackLayout MaximumWidthRequest="240"
+                                 VerticalOptions="Center">
+                
+                
+
+                <Border Background="White"
+                        Margin="10">
+
+                    <Entry x:Name="loginEmail"
+                       Placeholder="digite seu email ou usuário">
+
+                    </Entry>
+
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15">
+                                
+                            </RoundRectangle>
+                        </Border.StrokeShape>
+
+
+                    
+                </Border>
+                
+                <Border BackgroundColor="white"
+                        Margin="10">
+                    <Entry x:Name="loginPassword"
+                           Placeholder="digite a senha">
+                    </Entry>
+
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15">
+
+                        </RoundRectangle>
+                    </Border.StrokeShape>
+                    </Border>
+
+
+                    <Button Text="criar conta"
+                            BackgroundColor="Orange"
+                            MaximumWidthRequest="150"
+                            Margin="10">
+
+                    </Button>
+
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
