@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="padaria.views.NewAcount"
+             Title="Criar Conta">
+
+    <ScrollView>
+        
+        <VerticalStackLayout BackgroundColor="#D49B5D">
+
+            <Label Text="Crie sua conta"
+                   FontFamily="Changa"
+                   HorizontalOptions="Center"
+                   FontSize="30"
+                   Margin="0,50">
+            </Label>
+        
+            <Border WidthRequest="280"
+                    Margin="0"
+                    Stroke="Transparent">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15">
+
+                    </RoundRectangle>
+
+                </Border.StrokeShape>
+
+                <Border.Shadow>
+                   <Shadow Brush="Black" 
+                    Offset="5,5" 
+                    Radius="10" 
+                    Opacity="0.3" />
+                </Border.Shadow>
+
+                <VerticalStackLayout BackgroundColor="White"
+                                     VerticalOptions="Center"
+                                     Spacing="10"
+                                     Padding="25"
+                                    >
+                
+                    <Border WidthRequest="200">
+                    
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15">
+                        
+                            </RoundRectangle>
+                        </Border.StrokeShape>
+                        
+                        <Entry x:Name="NameUser"
+                               Placeholder="Nome Completo">
+                         </Entry>
+                                
+                    </Border>
+                
+                    <Border WidthRequest="200">
+                    
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="15">
+                    
+                            </RoundRectangle>
+                        </Border.StrokeShape>
+                    
+                        <Entry x:Name="EmailUser"
+                               Placeholder="Email"
+                               VerticalOptions="Center">
+                                            
+                        </Entry>
+                     </Border>
+                
+                     <Border WidthRequest="200">
+                     
+                         <Border.StrokeShape>
+                             <RoundRectangle CornerRadius="15">
+                     
+                             </RoundRectangle>
+                         </Border.StrokeShape>
+                         
+                         <Entry x:Name="Number"
+                                Placeholder="Telefone"
+                                VerticalOptions="Center">
+                     
+                         </Entry>
+                     </Border>
+                
+                     <Border WidthRequest="200">
+                     
+                         <Border.StrokeShape>
+                             <RoundRectangle CornerRadius="15">
+                     
+                             </RoundRectangle>
+                             
+                         </Border.StrokeShape>
+                         <Entry x:Name="CPF"
+                                 Placeholder="CPF"
+                                 VerticalOptions="Center">                                  
+                                            
+                          </Entry>
+
+
+                         
+                      </Border>
+
+                     <Button Text="Criar Conta"
+                             MaximumWidthRequest="150"
+                             BackgroundColor="#964B00"
+                             TextColor="White">
+                     
+                     </Button>
+
+                </VerticalStackLayout>                   
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

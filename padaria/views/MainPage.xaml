@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="padaria.MainPage">
+    <Grid>
+      <!-- <Image Source="background.jpg"
+                Aspect="AspectFill"
+                Opacity="0.5 ">
+           
+           </Image>  -->
+        
+        
+
+     
+     <ScrollView>
+            <VerticalStackLayout BackgroundColor="#D49B5D">
+
+                <Image Source="bread.webp"
+                       HeightRequest="80"
+                       Opacity="1"
+                       Margin="0,5,0,0">
+                </Image>
+
+                <Label Text="PADARIA ARTESANAL"
+                    HorizontalOptions="Center"
+                    TextColor="#654321"
+                    Margin="0,0,0,7"
+                    FontFamily="Changa"
+                    FontSize="20">
+                </Label>
+
+                <Label Text="BEM VINDO"
+                    TextColor="white"
+                    HorizontalOptions="Center"
+                    FontFamily="Changa"
+                    Margin="0,0,0,15"
+                    FontSize="20">
+
+                    <Label.Shadow>
+                     <Shadow Brush="Gray"
+                    Offset="5,5"
+                    Radius="3"
+                    Opacity="0.5" />
+                    </Label.Shadow>
+
+                </Label>
+     
+             <Label Text="Faça login para pedir seu pão quentinho"
+                    TextColor="white"
+                    HorizontalOptions="Center"
+                    FontFamily="TimesNewRoman"
+                    Margin="0,0,0,10"
+                    FontSize="15">
+                    
+             </Label>
+             
+             
+             <Border 
+                     Padding="20"
+                     MaximumWidthRequest="280"
+                     MaximumHeightRequest="280"
+                     BackgroundColor="white"
+                     Stroke="Transparent">
+
+                    <Border.Shadow>
+                        <Shadow Brush="Black" 
+                    Offset="5,5" 
+                    Radius="10" 
+                    Opacity="0.3" />
+                    </Border.Shadow>
+
+                    <Border.StrokeShape>
+                     <RoundRectangle CornerRadius="15">
+                             
+                     </RoundRectangle>
+                 </Border.StrokeShape>
+                 
+             <VerticalStackLayout MaximumWidthRequest="240"
+                                  VerticalOptions="Center">
+                 
+                 
+     
+                 <Border Background="White"
+                         Margin="5">
+     
+                     <Entry x:Name="loginEmail"
+                        Placeholder="digite seu email ou usuário">
+     
+                     </Entry>
+
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="15">
+
+                                </RoundRectangle>
+                            </Border.StrokeShape>
+                        </Border>
+     
+                     <Border BackgroundColor="white"
+                         Margin="5">
+                         
+                         <Entry x:Name="loginPassword"
+                            Placeholder="digite a senha">
+                         </Entry>
+     
+                        
+     
+                     <Border.StrokeShape>
+                         <RoundRectangle CornerRadius="15">
+     
+                         </RoundRectangle>
+                     </Border.StrokeShape>
+                     </Border>
+     
+                     <Button Text="esqueceu a senha?"
+                             BackgroundColor="Transparent"
+                             TextColor="#6F4E37"
+                             Margin="0">
+     
+                     </Button>
+     
+     
+                     <Button Text="entrar"
+                             BackgroundColor="#964B00"
+                             MaximumWidthRequest="150"
+                             Margin="0"
+                             TextColor="White"
+                             >
+     
+                     </Button>
+     
+                     <Button Text="não tem conta? Crie agora"
+                             BackgroundColor="Transparent"
+                             TextColor="#6F4E37"
+                             Margin="0,0,0,0"
+                             Clicked="Button_Clicked">
+                         
+                     </Button>
+     
+     
+                 </VerticalStackLayout>
+             </Border>
+
+
+
+                <Image Source="coffee.webp"
+                       HeightRequest="80"
+                       HorizontalOptions="Center">
+                </Image>
+
+            </VerticalStackLayout>
+         
+         
+       </ScrollView>
+
+
+
+    </Grid>
+</ContentPage>
