@@ -46,10 +46,12 @@
                         
                             </RoundRectangle>
                         </Border.StrokeShape>
-                        
+
                         <Entry x:Name="NameUser"
-                               Placeholder="Nome Completo">
-                         </Entry>
+                               Placeholder="Nome Completo"
+                               TextColor="Black">
+                               
+                        </Entry>
                                 
                     </Border>
                 
@@ -63,7 +65,9 @@
                     
                         <Entry x:Name="EmailUser"
                                Placeholder="Email"
-                               VerticalOptions="Center">
+                               VerticalOptions="Center"
+                               TextColor="Black"
+                               Keyboard="Email">
                                             
                         </Entry>
                      </Border>
@@ -75,12 +79,12 @@
                      
                              </RoundRectangle>
                          </Border.StrokeShape>
-                         
-                         <Entry x:Name="Number"
+
+                        <Entry x:Name="Number"
                                 Placeholder="Telefone"
-                                VerticalOptions="Center">
-                     
-                         </Entry>
+                                VerticalOptions="Center"
+                                TextColor="Black">
+                        </Entry>
                      </Border>
                 
                      <Border WidthRequest="200">
@@ -91,11 +95,11 @@
                              </RoundRectangle>
                              
                          </Border.StrokeShape>
-                         <Entry x:Name="CPF"
+                        <Entry x:Name="CPF"
                                  Placeholder="CPF"
-                                 VerticalOptions="Center">                                  
-                                            
-                          </Entry>
+                                 VerticalOptions="Center"                                  
+                                 TextColor="Black">
+                        </Entry>
 
 
                          
@@ -104,7 +108,8 @@
                      <Button Text="Criar Conta"
                              MaximumWidthRequest="150"
                              BackgroundColor="#964B00"
-                             TextColor="White">
+                             TextColor="White"
+                             Clicked="Button_Clicked">
                      
                      </Button>
 
